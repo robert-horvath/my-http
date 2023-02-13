@@ -1,0 +1,34 @@
+{
+    "name": "robert/my-http",
+    "type": "library",
+    "description": "",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "RHo\\Http\\Filter\\": [
+                "src/filter/"
+            ],
+            "RHo\\Http\\": [
+                "src/",
+                "src/request/",
+                "src/response/"
+            ],
+            "RHo\\Http\\Response\\": [
+                "src/response/",
+                "src/response/client-error/",
+                "src/response/server-error/",
+                "src/response/successful/"
+            ]
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "robert/http": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "provide": {
+        "robert/http-implementation": "1.0.0"
+    }
+}
